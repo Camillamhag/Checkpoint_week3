@@ -12,6 +12,7 @@ for x in customer:
         print("This customer is (probably) NOT a freud")
     elif y in salary <= 555000 and taxes <= 30/555000:
         print("This customer is (probably) a freud!")
+        
 
 
 

@@ -7,6 +7,8 @@ no_space = text.strip()
 print(capitalized_string)
 print(no_space.replace(" ",""))
 
+return(text)
+
 
 
 

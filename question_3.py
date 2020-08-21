@@ -1,16 +1,25 @@
-Jordan_belfort = {‘calls’: 178, ‘meetings’:17,  ‘sales’:6}
+Jordan_belfort = {"calls": 178, "meetings":17,  "sales":6}
+score = 0
 
-total_scores = {}
-Jordan_belfort = {‘calls’: 178, ‘meetings’:17,  ‘sales’:6}
-values = Jordan_belfort.values()
-total_score = sum(values)
-print(total_score)
+if "calls" in Jordan_belfort:
+    score += Jordan_belfort["calls"] * 10
 
-#funksjon for å adde en ny nøkkel/verdi i en dictionary: 
-total_score_employer = {
-  "calls": 178,
-  "meetings": 17,
-  "sales": 6
-}
-thisdict["score"] = 
-print(total_score_employer)
+    if Jordan_belfort["calls"] > 150:
+        score += 100
+
+if "meetings" in Jordan_belfort:
+    score += Jordan_belfort["meetings"]* 30
+
+    if Jordan_belfort["meetings"] > 20:
+        score += 100  
+
+if "sale" in Jordan_belfort:
+    score += Jordan_belfort["sale"]* 100           
+
+    if Jordan_belfort["sale"] > 5:
+        score += 100  
+
+
+
+print(score)        
+

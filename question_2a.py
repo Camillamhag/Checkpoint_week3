@@ -10,3 +10,4 @@ print(no_space.replace(" ",""))
 
 
 
+

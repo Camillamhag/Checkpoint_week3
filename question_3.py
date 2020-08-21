@@ -21,5 +21,33 @@ if "sale" in Jordan_belfort:
 
 
 
-print(score)        
+print(score)      
+
+
+
+jordan_belfort = {'calls': 178, 'meetings':17,  'sales':6}
+CALLS_M = 10
+MEETINGS_M = 30
+SALES_M = 100
+BONUS = 100
+score = 0
+score = score + jordan_belfort['calls']*CALLS_M
+score = score + jordan_belfort['meetings']*MEETINGS_M
+score = score + jordan_belfort['sales']*SALES_M
+if jordan_belfort['calls']>150:
+    score = score + BONUS
+if jordan_belfort['meetings']>20:
+    score = score + BONUS
+if jordan_belfort['sales']>5:
+    score = score + BONUS
+
+
+jordan_belfort['score'] = score
+
+
+
+
+
+
+
 
